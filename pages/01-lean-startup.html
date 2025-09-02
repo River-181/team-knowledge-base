@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>린 스타트업 - 프로젝트 지식창고</title>
+    
+    <!-- Pretendard 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="01-problem-definition.html">문제 정의</a></li>
+                            <li><a href="01-lean-startup.html" class="active">린 스타트업</a></li>
+                            <li><a href="01-customer-development.html">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="02-mvp.html">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="02-lean-canvas.html">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="03-agile.html">애자일 방법론</a></li>
+                            <li><a href="03-growth-measurement.html">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <main class="content">
+            <h1>🚀 린 스타트업 (Lean Startup)</h1>
+
+            <section>
+                <h3>🤔 왜 필요한가?</h3>
+                <p>자원(시간, 돈, 인력)이 절대적으로 부족한 스타트업이나 프로젝트 팀에게 <strong>'실패하지 않는 법'이 아니라 '실패 비용을 최소화하며 가장 빠르게 배우는 법'</strong>을 알려줍니다.</p>
+                
+                <p>'만들고 → 측정하고 → 배운다'는 사이클을 통해 불필요한 기능 개발이나 잘못된 방향으로 가는 것을 막아 낭비를 줄입니다.</p>
+            </section>
+
+            <section>
+                <h3>⏰ 언제 쓰이는가?</h3>
+                <p>프로젝트의 시작부터 끝까지, 모든 의사결정의 기반이 되는 <strong>핵심 철학이자 나침반</strong>입니다.</p>
+            </section>
+
+            <!-- Build-Measure-Learn 사이클 다이어그램 -->
+            <section>
+                <h3>🔄 Build-Measure-Learn 사이클</h3>
+                <div class="mermaid">
+graph LR
+    A[💡 Ideas<br/>아이디어] --> B[🛠️ Build<br/>만들기]
+    B --> C[📊 Measure<br/>측정]
+    C --> D[🧠 Learn<br/>학습]
+    D --> A
+    
+    B -.-> E[📱 MVP<br/>최소기능제품]
+    C -.-> F[📈 Data<br/>데이터]
+    D -.-> G[🔍 Insights<br/>통찰]
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e8
+    style E fill:#fff9c4
+    style F fill:#fce4ec
+    style G fill:#e0f2f1
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>1️⃣ Build (만들기)</h4>
+                        <p>핵심 아이디어를 <strong>최소 기능 제품(MVP)</strong>으로 빠르게 만든다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>2️⃣ Measure (측정)</h4>
+                        <p>시장에 출시하여 고객의 반응(데이터)을 측정한다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>3️⃣ Learn (학습)</h4>
+                        <p>데이터를 분석하여 가설이 맞았는지 틀렸는지 배우고, 다음 행동을 결정한다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>📚 추천 학습 자료/키워드</h3>
+                <ul>
+                    <li><strong>도서</strong>: 에릭 리스, 『<strong>린 스타트업 (The Lean Startup)</strong>』 (필독서)</li>
+                    
+                    <li><strong><code>Build-Measure-Learn (만들기-측정-학습)</code></strong>: 린 스타트업의 핵심 사이클</li>
+                    
+                    <li><strong><code>가설 검증 (Hypothesis Validation)</code></strong>: "우리의 고객은 ~할 것이다"와 같은 모든 아이디어는 '검증해야 할 가설'일 뿐이라는 개념</li>
+                    
+                    <li><strong><code>Validated Learning (검증된 학습)</code></strong>: 실제 고객 데이터에 의해 증명된 학습. 팀의 감이나 예상이 아닌, 사실에 기반한 지식을 의미</li>
+                </ul>
+            </section>
+
+            <!-- 메타인지 섹션 -->
+            <section class="meta-section">
+                <h3>🤔 함께 생각해보기</h3>
+                <div class="meta-question">
+                    <strong>Q1:</strong> 이 내용을 우리 프로젝트에 어떻게 적용할 수 있을까요?
+                    <ul>
+                        <li>우리 프로젝트에서 가장 먼저 검증해야 할 가설은 무엇인가?</li>
+                        <li>현재 우리가 '추측'으로만 생각하고 있는 것들은 무엇인가?</li>
+                        <li>가장 빠르고 저비용으로 만들 수 있는 MVP는 무엇일까?</li>
+                    </ul>
+                </div>
+                <div class="meta-question">
+                    <strong>Q2:</strong> 이 주제에 대해 우리가 아직 모르는 것은 무엇일까요?
+                    <ul>
+                        <li>Build-Measure-Learn 사이클을 어떻게 구체적으로 실행할 것인가?</li>
+                        <li>어떤 지표(metrics)를 측정해야 의미 있는 학습이 가능한가?</li>
+                        <li>언제 '피벗(방향 전환)'을 결정해야 하는가?</li>
+                        <li>실패한 가설에서 어떻게 가치 있는 학습을 추출할 것인가?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 액션 아이템 -->
+            <section>
+                <h3>🎯 다음 단계</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>📝 가설 정의하기</h4>
+                        <p>우리 프로젝트의 핵심 가설들을 명확히 정의하고 문서화하세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🛠️ MVP 계획하기</h4>
+                        <p>가장 빠르게 만들 수 있는 최소 기능 제품을 설계하세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 측정 지표 설정</h4>
+                        <p>가설 검증을 위해 측정할 구체적인 지표들을 정하세요.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

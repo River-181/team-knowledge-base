@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>린 캔버스 - 프로젝트 지식창고</title>
+    
+    <!-- Pretendard 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="01-problem-definition.html">문제 정의</a></li>
+                            <li><a href="01-lean-startup.html">린 스타트업</a></li>
+                            <li><a href="01-customer-development.html">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="02-mvp.html">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="02-lean-canvas.html" class="active">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="03-agile.html">애자일 방법론</a></li>
+                            <li><a href="03-growth-measurement.html">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <main class="content">
+            <h1>📝 린 캔버스 (Lean Canvas)</h1>
+
+            <section>
+                <h3>🤔 왜 필요한가?</h3>
+                <ul>
+                    <li><strong>속도</strong>: 몇 주가 걸리는 사업계획서와 달리, 하루 만에 초안을 만들 수 있습니다.</li>
+                    <li><strong>집중</strong>: 가장 위험하고 불확실한 가설에 집중하게 만듭니다.</li>
+                    <li><strong>소통</strong>: 팀원 모두가 동일한 그림을 보고 빠르게 아이디어를 공유하고 수정할 수 있습니다.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>캔버스 린 캔버스 9개 블록</h3>
+                <p>아래 순서대로 팀원들과 각 칸에 대한 답을 포스트잇에 적어 붙여보세요. 처음에는 완벽하지 않아도 괜찮습니다.</p>
+                <style>
+                    .lean-canvas-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        table-layout: fixed;
+                        margin: 2rem 0;
+                    }
+                    .lean-canvas-table td {
+                        border: 2px solid #e0e0e0;
+                        padding: 1rem;
+                        vertical-align: top;
+                        height: 180px;
+                    }
+                    .lean-canvas-table h4 {
+                        margin-top: 0;
+                        font-size: 1rem;
+                        color: #333;
+                    }
+                    .lean-canvas-table .uvp-cell {
+                        height: 120px;
+                    }
+                    .lean-canvas-table .bottom-row td {
+                        height: 140px;
+                    }
+                </style>
+                <table class="lean-canvas-table">
+                    <tr>
+                        <td style="width: 20%; background-color: #fff9c4;">
+                            <h4>1. 문제<br/>(Problem)</h4>
+                        </td>
+                        <td style="width: 20%; background-color: #dcedc8;">
+                            <h4>4. 해결책<br/>(Solution)</h4>
+                        </td>
+                        <td style="width: 20%; background-color: #e1f5fe;">
+                            <h4>8. 핵심 지표<br/>(Key Metrics)</h4>
+                        </td>
+                        <td style="width: 20%; background-color: #ffecb3;">
+                            <h4>9. 경쟁 우위<br/>(Unfair Advantage)</h4>
+                        </td>
+                        <td style="width: 20%; background-color: #ffcdd2;">
+                            <h4>2. 고객군<br/>(Customer Segments)</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="uvp-cell" style="background-color: #f5f5f5;">
+                            <h4>3. 고유 가치 제안 (Unique Value Proposition)</h4>
+                        </td>
+                        <td colspan="2" style="background-color: #f5f5f5;">
+                            <h4>5. 채널 (Channels)</h4>
+                        </td>
+                    </tr>
+                    <tr class="bottom-row">
+                        <td colspan="3" style="background-color: #f8bbd0;">
+                            <h4>7. 비용 구조 (Cost Structure)</h4>
+                        </td>
+                        <td colspan="2" style="background-color: #d1c4e9;">
+                            <h4>6. 수익원 (Revenue Streams)</h4>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h3>📋 9개 블록 채우기 가이드</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>1. 문제 (Problem)</h4>
+                        <p>고객이 가장 고통스러워하는 문제 1~3가지와 기존 대안을 적습니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>2. 고객군 (Customer Segments)</h4>
+                        <p>문제에 가장 고통받는 사람들, 우리의 첫 번째 열성팬(Early Adopter)을 구체적으로 묘사합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>3. 고유 가치 제안 (UVP)</h4>
+                        <p>경쟁사와 다른, 명확하고 강력한 한 문장의 메시지를 만듭니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>4. 해결책 (Solution)</h4>
+                        <p>정의한 각 문제를 해결할 핵심 기능 3~4가지를 간략하게 적습니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>5. 채널 (Channels)</h4>
+                        <p>고객에게 도달할 경로를 모두 나열합니다. (예: 페이스북 광고, 블로그)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>6. 수익원 (Revenue Streams)</h4>
+                        <p>어떻게 돈을 벌 것인지, 고객이 지불할 가격은 얼마일지 적습니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>7. 비용 구조 (Cost Structure)</h4>
+                        <p>사업 운영에 드는 고정비와 변동비를 나열합니다. (예: 인건비, 서버비)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>8. 핵심 지표 (Key Metrics)</h4>
+                        <p>사업의 성공을 판단할 가장 중요한 숫자(지표)를 설정합니다. (AARRR 프레임워크 참고)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>9. 경쟁 우위 (Unfair Advantage)</h4>
+                        <p>경쟁사가 쉽게 따라 할 수 없는 우리만의 강점을 적습니다. (예: 커뮤니티, 데이터, 팀)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 메타인지 섹션 -->
+            <section class="meta-section">
+                <h3>💡 활용법</h3>
+                <div class="meta-question">
+                    <strong>살아있는 문서로 활용:</strong> 캔버스는 한 번 만들고 끝나는 것이 아닙니다. 고객을 더 만나고, 제품을 개발하면서 배운 것을 바탕으로 매주 또는 매달 꾸준히 업데이트해야 합니다.
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

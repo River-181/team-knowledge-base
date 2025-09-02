@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객 개발 - 프로젝트 지식창고</title>
+    
+    <!-- Pretendard 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="01-problem-definition.html">문제 정의</a></li>
+                            <li><a href="01-lean-startup.html">린 스타트업</a></li>
+                            <li><a href="01-customer-development.html" class="active">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="02-mvp.html">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="02-lean-canvas.html">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="03-agile.html">애자일 방법론</a></li>
+                            <li><a href="03-growth-measurement.html">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <main class="content">
+            <h1>👥 고객 개발 (Customer Development)</h1>
+
+            <section>
+                <h3>🤔 왜 필요한가?</h3>
+                <p>린 스타트업의 '배우는' 과정을 구체적으로 실행하는 행동 강령입니다. <strong>"Get out of the building(사무실에서 나가라)"</strong>이라는 유명한 말처럼, 책상에 앉아 상상하는 대신 실제 고객을 만나 답을 찾는 과정입니다.</p>
+                
+                <p>이를 통해 우리 제품을 사줄 고객이 정말 있는지, 우리가 생각한 문제가 고객의 진짜 문제가 맞는지 검증할 수 있습니다.</p>
+            </section>
+
+            <section>
+                <h3>⏰ 언제 쓰이는가?</h3>
+                <p>아이디어 구상 단계부터 제품 출시 후까지, <strong>고객의 목소리가 필요할 때 항상</strong> 사용됩니다. 특히 초기 아이디어 검증 단계에서 매우 중요합니다.</p>
+            </section>
+
+            <!-- 고객 개발 4단계 -->
+            <section>
+                <h3>🔄 고객 개발 4단계</h3>
+                <div class="mermaid">
+graph LR
+    A[🔍 Customer<br/>Discovery<br/>고객 발견] --> B[✅ Customer<br/>Validation<br/>고객 검증]
+    B --> C[📈 Customer<br/>Creation<br/>고객 창출]
+    C --> D[🏢 Company<br/>Building<br/>회사 구축]
+    
+    A -.-> A1[문제 존재<br/>확인]
+    B -.-> B1[구매 의사<br/>확인]
+    C -.-> C1[시장 확장]
+    D -.-> D1[조직 확장]
+    
+    style A fill:#e3f2fd
+    style B fill:#e8f5e8
+    style C fill:#fff3e0
+    style D fill:#fce4ec
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>1️⃣ 고객 발견 (Customer Discovery)</h4>
+                        <p>우리 제품/서비스로 해결하려는 <strong>문제가 고객에게 실제로 존재하는지</strong> 확인하는 단계</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>2️⃣ 고객 검증 (Customer Validation)</h4>
+                        <p>해결책(제품)을 <strong>구매할 의사가 있는 고객이 충분히 많아</strong> 지속 가능한 비즈니스가 가능한지 확인하는 단계</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>📚 추천 학습 자료/키워드</h3>
+                <ul>
+                    <li><strong>도서</strong>: 스티브 블랭크, 『<strong>스타트업을 위한 4단계 고객 개발 (The Four Steps to the Epiphany)</strong>』 (고객 개발의 바이블)</li>
+                    
+                    <li><strong><code>고객 발견 (Customer Discovery)</code></strong>: 우리 제품/서비스로 해결하려는 문제가 고객에게 실제로 존재하는지 확인하는 단계</li>
+                    
+                    <li><strong><code>고객 검증 (Customer Validation)</code></strong>: 해결책(제품)을 구매할 의사가 있는 고객이 충분히 많아 지속 가능한 비즈니스가 가능한지 확인하는 단계</li>
+                    
+                    <li><strong><code>피벗 (Pivot)</code></strong>: 기존에 세웠던 사업의 핵심 가설(고객, 문제, 수익모델 등)이 틀렸음을 인정하고, 학습한 내용을 바탕으로 비즈니스 모델의 핵심 요소를 바꾸는 전략적 방향 전환</li>
+                </ul>
+            </section>
+
+            <!-- 고객 인터뷰 가이드 -->
+            <section>
+                <h3>💬 효과적인 고객 인터뷰 팁</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>✅ 해야 할 것</h4>
+                        <ul>
+                            <li>개방형 질문하기: "어떤 점이 가장 불편하세요?"</li>
+                            <li>경험에 대해 구체적으로 듣기</li>
+                            <li>감정과 동기 파악하기</li>
+                            <li>현재 사용하는 대안 조사하기</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h4>❌ 하지 말아야 할 것</h4>
+                        <ul>
+                            <li>유도 질문하기: "~하면 좋겠죠?"</li>
+                            <li>우리 솔루션 먼저 설명하기</li>
+                            <li>가정에 기반한 질문하기</li>
+                            <li>의견보다 행동에 집중하지 않기</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 메타인지 섹션 -->
+            <section class="meta-section">
+                <h3>🤔 함께 생각해보기</h3>
+                <div class="meta-question">
+                    <strong>Q1:</strong> 이 내용을 우리 프로젝트에 어떻게 적용할 수 있을까요?
+                    <ul>
+                        <li>우리가 인터뷰해야 할 타겟 고객은 구체적으로 누구인가?</li>
+                        <li>고객 발견 단계에서 물어볼 핵심 질문 5가지는 무엇인가?</li>
+                        <li>어떤 방법으로 잠재 고객을 찾고 인터뷰를 요청할 것인가?</li>
+                    </ul>
+                </div>
+                <div class="meta-question">
+                    <strong>Q2:</strong> 이 주제에 대해 우리가 아직 모르는 것은 무엇일까요?
+                    <ul>
+                        <li>몇 명의 고객을 인터뷰해야 충분한 데이터를 얻을 수 있는가?</li>
+                        <li>고객의 거짓말이나 편향된 답변을 어떻게 걸러낼 것인가?</li>
+                        <li>언제 '피벗'을 결정해야 하는가? 어떤 신호를 봐야 하는가?</li>
+                        <li>온라인/오프라인에서 고객 인터뷰를 어떻게 효과적으로 진행할 것인가?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 액션 아이템 -->
+            <section>
+                <h3>🎯 다음 단계</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>👥 타겟 고객 정의</h4>
+                        <p>인터뷰할 구체적인 고객 페르소나를 정의하고 리스트를 만드세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>❓ 질문 리스트 작성</h4>
+                        <p>고객 발견을 위한 구체적인 인터뷰 질문들을 준비하세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📞 인터뷰 실행</h4>
+                        <p>최소 5-10명의 잠재 고객과 인터뷰를 진행하세요.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

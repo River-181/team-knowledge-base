@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최소 기능 제품 (MVP) - 프로젝트 지식창고</title>
+    
+    <!-- Pretendard 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="01-problem-definition.html">문제 정의</a></li>
+                            <li><a href="01-lean-startup.html">린 스타트업</a></li>
+                            <li><a href="01-customer-development.html">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="02-mvp.html" class="active">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="02-lean-canvas.html">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="03-agile.html">애자일 방법론</a></li>
+                            <li><a href="03-growth-measurement.html">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <main class="content">
+            <h1>📦 최소 기능 제품 (MVP, Minimum Viable Product)</h1>
+
+            <section>
+                <h3>🤔 왜 필요한가?</h3>
+                <p>'고객의 핵심 문제를 해결하고 가치를 제공한다'는 우리의 가설을 검증할 수 있는 최소한의 기능만 담은 제품입니다. 완벽한 제품을 만드느라 몇 달, 몇 년의 시간을 허비하는 대신, 가장 중요한 가설을 가장 적은 노력과 시간으로 테스트하기 위해 필요합니다. MVP를 통해 얻은 고객의 피드백은 다음 제품 개발의 방향을 결정하는 데 결정적인 역할을 합니다.</p>
+            </section>
+
+            <section>
+                <h3>⏰ 언제 쓰이는가?</h3>
+                <p>본격적인 개발에 착수하기 직전, '이번 스프린트/개발 주기에서 무엇을, 어디까지 만들 것인가'를 정의할 때 사용합니다.</p>
+            </section>
+
+            <section>
+                <h3>🖼️ 시각 자료: MVP 접근법</h3>
+                <p>MVP의 핵심 철학은 처음부터 완벽한 자동차를 만드는 것이 아니라, '이동'이라는 핵심 가치를 해결하는 가장 간단한 스케이트보드부터 제공하는 것입니다.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*tN2h_A7W2Z-dw_6v_53wVg.png" alt="MVP 스케이트보드 비유" style="width: 100%; border: 1px solid #eee;">
+            </section>
+
+            <section>
+                <h3>💡 실전 적용 사례: (주)세계로시스템</h3>
+                <blockquote>
+                    처음부터 완벽한 학원 관리 시스템을 판매하려 했지만 시장의 반응은 차가웠습니다. 이때, 고객들이 당장 돈을 지불할 의사가 있는 <strong>'비접촉 출결 카드'</strong>를 MVP로 전면에 내세웠습니다. 눈에 보이지 않는 소프트웨어보다 당장 체감할 수 있는 하드웨어를 먼저 제공하여 시장에 진입한 뒤, 자연스럽게 핵심인 관리 시스템을 보급하는 데 성공했습니다. 이는 복잡한 솔루션 중 가장 고객의 통증이 심한 부분(Pain Point)을 공략한 성공적인 MVP 전략입니다.
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>📚 추천 학습 자료/키워드</h3>
+                <ul>
+                    <li><strong><code>MVP</code> vs <code>프로토타입(Prototype)</code> vs <code>파일럿(Pilot)</code></strong>:
+                        <ul>
+                            <li><strong>프로토타입</strong>: 아이디어의 기능이나 디자인을 시각적으로 구현한 모형. 실제 작동하지 않을 수 있음. (예: 페이퍼 프로토타입, Figma 디자인)</li>
+                            <li><strong>MVP</strong>: 실제 사용자가 사용할 수 있는, 최소 기능이 구현된 '실제 제품'. 데이터를 측정할 수 있어야 함.</li>
+                            <li><strong>파일럿</strong>: 완성된 제품을 특정 그룹에게만 먼저 공개하여 테스트하는 것.</li>
+                        </ul>
+                    </li>
+                    <li><strong><code>Fidelity (정교함)</code></strong>: MVP의 완성도 수준.
+                        <ul>
+                            <li><strong>Low-Fidelity MVP</strong>: 핵심 기능의 작동 여부만 검증하는 수준. (예: 수동으로 처리하는 컨시어지 MVP, 기능 설명만 있는 랜딩페이지)</li>
+                            <li><strong>High-Fidelity MVP</strong>: 실제 제품과 유사한 디자인과 경험을 제공하는 수준.</li>
+                        </ul>
+                    </li>
+                    <li><strong><code>컨시어지 MVP (Concierge MVP)</code></strong>: 자동화된 시스템처럼 보이지만, 실제로는 사람이 뒤에서 모든 것을 수동으로 처리하여 고객에게 가치를 제공하는 방식. 시스템 개발 비용 없이 가설을 검증하기에 좋음.</li>
+                </ul>
+            </section>
+
+            <!-- 메타인지 섹션 -->
+            <section class="meta-section">
+                <h3>🤔 함께 생각해보기</h3>
+                <div class="meta-question">
+                    <strong>Q1:</strong> 우리 프로젝트의 핵심 가설을 검증하기 위한 가장 간단한 MVP는 무엇일까요? (기능, 형태, 기간 등)
+                </div>
+                <div class="meta-question">
+                    <strong>Q2:</strong> 우리 MVP가 성공적인지 판단하기 위해 어떤 데이터를 측정해야 할까요?
+                </div>
+            </section>
+
+            <!-- 액션 아이템 -->
+            <section>
+                <h3>🎯 다음 단계</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🎨 MVP 기능 정의</h4>
+                        <p>이번에 만들 MVP에 포함될 최소한의 기능 목록을 작성하세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 성공 지표 설정</h4>
+                        <p>MVP의 성공 여부를 판단할 구체적인 측정 지표를 정의하세요. (예: 구매 전환율 5%)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🗓️ 개발 계획 수립</h4>
+                        <p>정의된 MVP를 개발하기 위한 간단한 일정과 역할을 분담하세요.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

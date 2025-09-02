@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 정의 - 프로젝트 지식창고</title>
+    
+    <!-- Pretendard 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="01-problem-definition.html" class="active">문제 정의</a></li>
+                            <li><a href="01-lean-startup.html">린 스타트업</a></li>
+                            <li><a href="01-customer-development.html">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="02-mvp.html">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="02-lean-canvas.html">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="03-agile.html">애자일 방법론</a></li>
+                            <li><a href="03-growth-measurement.html">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <main class="content">
+            <h1>🔍 문제 정의 (Problem Definition)</h1>
+
+            <section>
+                <h3>🤔 왜 필요한가?</h3>
+                <p>성공하는 프로젝트는 고객의 <strong>'진짜 문제'</strong>를 해결해줍니다. 내가 만들고 싶은 것이 아니라, 사람들이 돈과 시간을 써서라도 해결하고 싶은 문제를 찾는 것이 모든 것의 시작입니다. 기술이나 아이디어에 매몰되기 전에, 해결할 가치가 있는 문제를 찾는 것이 실패 확률을 줄이는 가장 확실한 방법입니다.</p>
+
+                <blockquote>
+                    <strong>멘토의 한마디</strong>: "스타트업이 실패하는 가장 큰 이유는 <strong>시장이 원하지 않는 제품/서비스</strong>를 만들기 때문입니다. 시장이 크다는 것은, 그 시장의 사람들이 원하는 것을 내가 팔 수 있다는 의미입니다."
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>⏰ 언제 쓰이는가?</h3>
+                <p>프로젝트의 가장 첫 단계. 아이디어를 떠올리기 전, 혹은 떠오른 아이디어가 정말 가치 있는지 검증하고 싶을 때 사용됩니다.</p>
+            </section>
+
+            <section>
+                <h3>📚 추천 학습 자료/키워드</h3>
+                <ul>
+                    <li><strong><code>Problem-Solution Fit</code></strong>: 우리가 정의한 문제와 우리가 만들려는 해결책이 얼마나 잘 들어맞는지를 의미하는 개념.</li>
+                    
+                    <li><strong><code>고객 인터뷰</code></strong>, <strong><code>관찰</code></strong>: 잠재 고객을 직접 만나 그들의 불편함을 듣고 관찰하는 정성적 리서치 활동. "어떤 점이 가장 불편하세요?" 와 같은 개방형 질문이 중요합니다.</li>
+                    
+                    <li><strong><code>Jobs-to-be-Done (JTBD)</code></strong>: 고객이 제품/서비스를 '고용(hire)'해서 해결하려는 진짜 '일(job)'이 무엇인지 파악하는 프레임워크. (예: 사람들은 '드릴'을 사는 것이 아니라, '벽에 구멍을 뚫는 일'을 해결하기 위해 드릴을 고용한다.)</li>
+                    
+                    <li><strong><code>시장 규모 분석 (TAM/SAM/SOM)</code></strong>: 우리 제품이 공략할 시장의 크기를 전체 시장(TAM)부터, 유효 시장(SAM), 초기 확보 가능 시장(SOM)으로 세분화하여 현실적인 목표를 설정하는 프레임워크.</li>
+                </ul>
+            </section>
+
+            <!-- 메타인지 섹션 -->
+            <section class="meta-section">
+                <h3>🤔 함께 생각해보기</h3>
+                <div class="meta-question">
+                    <strong>Q1:</strong> 이 내용을 우리 프로젝트에 어떻게 적용할 수 있을까요?
+                    <ul>
+                        <li>우리가 현재 가지고 있는 아이디어는 정말 누군가의 '진짜 문제'를 해결하는가?</li>
+                        <li>우리가 타겟으로 하는 고객층이 실제로 이 문제로 불편함을 겪고 있는가?</li>
+                        <li>이 문제를 해결하기 위해 고객들이 현재 어떤 대안을 사용하고 있는가?</li>
+                    </ul>
+                </div>
+                <div class="meta-question">
+                    <strong>Q2:</strong> 이 주제에 대해 우리가 아직 모르는 것은 무엇일까요?
+                    <ul>
+                        <li>우리의 타겟 고객이 실제로 누구인지 명확하게 정의되어 있는가?</li>
+                        <li>고객 인터뷰를 통해 실제 니즈를 확인해본 적이 있는가?</li>
+                        <li>우리가 해결하려는 문제의 시장 규모는 얼마나 되는가?</li>
+                        <li>Problem-Solution Fit을 어떻게 측정하고 검증할 것인가?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 액션 아이템 -->
+            <section>
+                <h3>🎯 다음 단계</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>📝 고객 인터뷰 계획하기</h4>
+                        <p>잠재 고객 5-10명과 인터뷰를 통해 실제 문제를 확인해보세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔍 시장 조사하기</h4>
+                        <p>유사한 문제를 해결하려는 경쟁 제품/서비스를 조사해보세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 문제 우선순위 정하기</h4>
+                        <p>발견한 여러 문제 중 가장 해결할 가치가 있는 것을 선택하세요.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

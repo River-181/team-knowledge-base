@@ -1,0 +1,357 @@
+/* 🚀 Team. 망상궤도 지식창고 웹사이트 - 스타일시트 */
+
+/* ===== 기본 설정 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ===== 레이아웃 ===== */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 좌측 사이드바 */
+.sidebar {
+    width: 280px;
+    min-width: 280px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #e9ecef;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 20px;
+}
+
+.sidebar-header h1 {
+    font-size: 18px;
+    color: #007AFF;
+    margin-bottom: 5px;
+}
+
+.sidebar-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* 네비게이션 메뉴 */
+.nav-menu {
+    padding: 0 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu > ul > li {
+    margin-bottom: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    background-color: #e9ecef;
+    color: #007AFF;
+}
+
+.nav-menu a.active {
+    background-color: #007AFF;
+    color: white;
+}
+
+/* 서브메뉴 */
+.nav-menu ul ul {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.nav-menu ul ul a {
+    font-size: 13px;
+    color: #666;
+    padding: 6px 10px;
+}
+
+.nav-menu ul ul a:hover {
+    color: #007AFF;
+}
+
+/* 메인 컨텐츠 영역 */
+.content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 40px 60px;
+    max-width: calc(100% - 280px);
+}
+
+/* ===== 타이포그래피 ===== */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 1.2rem 0 0.6rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* ===== 리스트 ===== */
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* ===== 인용구 ===== */
+blockquote {
+    border-left: 4px solid #007AFF;
+    background-color: #f8f9fa;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* ===== 테이블 ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #007AFF;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* ===== 코드 ===== */
+code {
+    background-color: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    color: #e83e8c;
+}
+
+pre {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: #333;
+}
+
+/* ===== 특별 섹션 ===== */
+.meta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.meta-section h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.meta-question {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    border-left: 4px solid #ffd700;
+}
+
+/* ===== Mermaid 다이어그램 ===== */
+.mermaid {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* ===== 홈페이지 특별 스타일 ===== */
+.hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    color: #007AFF;
+    margin-top: 0;
+}
+
+/* ===== 링크 스타일 ===== */
+a {
+    color: #007AFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== 반응형 디자인 ===== */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    .content {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== 유틸리티 클래스 ===== */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #007AFF;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.highlight {
+    background-color: #fff3cd;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성장 측정 (AARRR) - 프로젝트 지식창고</title>
+    
+    <!-- Pretendard 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="01-problem-definition.html">문제 정의</a></li>
+                            <li><a href="01-lean-startup.html">린 스타트업</a></li>
+                            <li><a href="01-customer-development.html">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="02-mvp.html">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="02-lean-canvas.html">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="03-agile.html">애자일 방법론</a></li>
+                            <li><a href="03-growth-measurement.html" class="active">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <main class="content">
+            <h1>📊 성장 측정 (AARRR)</h1>
+
+            <section>
+                <h3>🤔 왜 필요한가?</h3>
+                <p>'만드는 것'만큼이나 '성장시키는 것'도 중요합니다. 그로스 해킹은 창의적인 방법과 데이터 분석을 통해 사용자를 빠르게 늘리고 서비스를 성장시키는 방법론입니다. 특히 AARRR 프레임워크는 고객의 생애주기를 5단계로 나누어 우리 서비스의 어느 부분에 문제가 있는지 진단하고 개선점을 찾도록 돕는 강력한 도구입니다.</p>
+            </section>
+
+            <section>
+                <h3>⏰ 언제 쓰이는가?</h3>
+                <p>제품 출시 후, 사용자를 확보하고 서비스를 개선해나가는 모든 단계에서 사용됩니다. 마케팅, 제품 개발, 데이터 분석 등 전반에 걸쳐 적용됩니다.</p>
+            </section>
+
+            <section>
+                <h3>🏴‍☠️ AARRR 퍼널 다이어그램 (해적 지표)</h3>
+                <p>고객이 우리 서비스를 처음 인지하고부터 수익을 내기까지의 과정을 5단계의 퍼널(깔때기)로 분석하는 프레임워크입니다. 각 단계별 전환율을 측정하여 우리 서비스의 어느 부분에 병목 현상이 있는지 파악하고 개선점을 찾을 수 있습니다.</p>
+                <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/4BEU/image/fZrSxKXTwZ_R9SvyhNDaTQ7RaC4.jpg" alt="AARRR 퍼널 다이어그램" style="width: 100%; border: 1px solid #eee;">
+            </section>
+
+            <section>
+                <h3>📋 AARRR 프레임워크 실전 적용 가이드</h3>
+                <p>단순히 '방문자 수'만 보는 것은 의미가 없습니다. AARRR은 고객이 우리 서비스를 경험하는 전체 여정을 5단계로 나누어, 각 단계에서 얼마나 많은 고객이 다음 단계로 넘어가는지(전환율)를 측정합니다.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>1. Acquisition (획득)</h4>
+                        <p><strong>고객은 우리를 어떻게 처음 만나는가?</strong><br/>(예: 웹사이트 순 방문자 수, 앱 다운로드 수, 유입 경로별 방문자 수)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>2. Activation (활성화)</h4>
+                        <p><strong>고객이 핵심 가치를 처음 경험했는가?</strong><br/>(예: 회원가입 전환율, 핵심 기능 첫 사용률, 온보딩 완료율)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>3. Retention (유지)</h4>
+                        <p><strong>고객이 다시 돌아오는가?</strong><br/>(예: 재방문율, 이탈률, WAU/MAU)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>4. Referral (추천)</h4>
+                        <p><strong>고객이 주변에 소문을 내는가?</strong><br/>(예: 친구 초대 발송 횟수, NPS)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>5. Revenue (수익)</h4>
+                        <p><strong>고객이 기꺼이 돈을 내는가?</strong><br/>(예: 유료 고객 전환율, 객단가(ARPU), 고객 생애 가치(LTV))</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 메타인지 섹션 -->
+            <section class="meta-section">
+                <h3>🤔 함께 생각해보기</h3>
+                <div class="meta-question">
+                    <strong>Q1:</strong> 현재 우리 프로젝트에서 가장 중요하게 생각하는 단 하나의 지표(OMTM, One Metric That Matters)는 무엇인가요?
+                </div>
+                <div class="meta-question">
+                    <strong>Q2:</strong> 우리 서비스에서 고객들이 '아하!'하고 핵심 가치를 느끼는 순간(Activation)은 정확히 무엇일까요?
+                </div>
+            </section>
+
+            <!-- 액션 아이템 -->
+            <section>
+                <h3>🎯 다음 단계</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>📊 핵심 지표 정의</h4>
+                        <p>AARRR 각 단계별로 우리 팀이 추적할 1~2개의 핵심 지표를 정의하세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📈 데이터 측정 환경 구축</h4>
+                        <p>정의한 지표를 측정할 수 있는 도구(예: Google Analytics)를 웹사이트/앱에 설치하세요.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔬 성장 실험 계획</h4>
+                        <p>가장 취약한 단계를 개선하기 위한 작은 실험(A/B 테스트 등) 아이디어를 3가지 이상 구상해보세요.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

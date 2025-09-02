@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿵덕이 정신과 철학 - 프로젝트 지식창고</title>
+    
+    <!-- Pretendard 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="01-problem-definition.html">문제 정의</a></li>
+                            <li><a href="01-lean-startup.html">린 스타트업</a></li>
+                            <li><a href="01-customer-development.html">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="02-mvp.html">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="02-lean-canvas.html">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="03-agile.html">애자일 방법론</a></li>
+                            <li><a href="03-growth-measurement.html">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html" class="active">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 메인 컨텐츠 영역 -->
+        <main class="content">
+            <h1>💡 쿵덕이: 우리가 존재하는 이유 (Our Raison d'être)</h1>
+            <blockquote>이 문서는 '쿵덕이'와 '소리 신호등' 서비스가 나아갈 방향을 제시하는 나침반이자, 모든 의사결정의 기준이 되는 우리의 정신과 철학을 담고 있습니다.</blockquote>
+
+            <section>
+                <h3>미션 (Our Mission)</h3>
+                <div class="hero-section" style="padding: 2rem; margin-bottom: 1rem;">
+                    <p style="font-size: 1.5rem; font-weight: 600;">"우리는 기술을 통해 단절된 이웃 사이에 '배려'라는 다리를 놓아, 건강한 주거 공동체를 회복합니다."</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>핵심 철학 (Our Core Philosophy)</h3>
+                <p>우리는 다음 네 가지 원칙을 바탕으로 제품을 만들고 서비스를 운영합니다.</p>
+                <div class="mermaid">
+                    graph LR
+                        subgraph Mission
+                            A["건강한 주거 공동체 회복"];
+                        end
+                        subgraph Philosophy
+                            B["관계 측정"];
+                            C["격려로 행동 유도"];
+                            D["일상에 스며드는 기술"];
+                            E["배려의 자본화"];
+                        end
+                        A --> B & C & D & E;
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>1. 우리는 소음이 아닌, 관계를 측정합니다.</h4>
+                        <p>문제의 본질은 데시벨(dB)이 아닌 '관계의 단절'입니다. 기술은 차가운 감시자가 아닌 따뜻한 중재자의 역할을 해야 합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>2. 우리는 처벌이 아닌, 격려로 행동을 이끕니다.</h4>
+                        <p>부정적 피드백 대신 '소리 신호등'과 '배려 포인트' 같은 긍정적 강화로 사용자의 성취감을 자극하고 즐거운 배려를 유도합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>3. 우리는 기술을 드러내지 않고, 일상에 스며듭니다.</h4>
+                        <p>최고의 기술은 기술이라 인지하지 못하는 것입니다. 복잡한 기술 대신 감성적 디자인과 직관적 인터페이스를 추구합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>4. 우리는 갈등 해결을 넘어, 배려를 자본으로 만듭니다.</h4>
+                        <p>사용자의 '배려 노력'을 데이터로 가시화하고, 사회적으로 인정받는 '배려 자본'으로 만들어 더 건강한 공동체의 밑거름이 되게 합니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>우리의 약속 (Our Promise)</h3>
+                <div class="meta-section">
+                    <h3 style="text-align: center; color: white;">"쿵덕이는 당신의 집에 머무는 조용한 친구이자, 당신의 배려심을 증명하는 든든한 파트너가 될 것입니다."</h3>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
