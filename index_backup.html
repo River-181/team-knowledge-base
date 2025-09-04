@@ -6,6 +6,14 @@
     <title>프로젝트 지식창고 - Team. 망상궤도</title>
     
     <!-- Pretendard 웹폰트 -->
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 지식창고 - Team. 망상궤도</title>
+    
+    <!-- Pretendard 웹폰트 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
     
     <!-- 스타일시트 -->
@@ -22,16 +30,6 @@
     </script>
 </head>
 <body>
-    <!-- 모바일 메뉴 버튼 -->
-    <button class="menu-toggle" aria-label="메뉴 열기">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    
-    <!-- 모바일 오버레이 -->
-    <div class="mobile-overlay"></div>
-    
     <div class="container">
         <!-- 좌측 사이드바 -->
         <div class="sidebar">
@@ -66,22 +64,22 @@
                     <li><a href="#learning-path">⚡ 실행과 관리</a>
                         <ul>
                             <li><a href="pages/03-agile.html">애자일 방법론</a></li>
-                            <li><a href="pages/03-growth-measurement.html">성장 측정</a></li>
+                            <li><a href="03-growth-measurement.html">성장 측정</a></li>
                         </ul>
                     </li>
                     <li><a href="#learning-path">🗣️ 커뮤니케이션과 도구</a>
                         <ul>
                             <li><a href="pages/04-pitching.html">피칭과 발표</a></li>
                             <li><a href="pages/04-collaboration-tools.html">필수 협업툴</a></li>
-                            <li><a href="pages/04-sales.html">영업과 설득</a></li>
+                            <li><a href="04-sales.html">영업과 설득</a></li>
                         </ul>
                     </li>
                     <li><a href="#learning-path">👥 팀과 창업가</a>
                         <ul>
                             <li><a href="pages/05-founder-dna.html">창업가의 DNA</a></li>
-                            <li><a href="pages/05-founder-principles.html">창업가의 행동원칙</a></li>
-                            <li><a href="pages/05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
-                            <li><a href="pages/05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                            <li><a href="05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
                         </ul>
                     </li>
                     <li><a href="pages/06-recommended-resources.html">📚 추천 자료모음</a>
@@ -305,6 +303,89 @@ graph LR
             </section>
         </main>
     </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Mermaid.js for 다이어그램 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>🚀 프로젝트 지식창고</h1>
+                <p>Team. 망상궤도</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">🏠 Home</a></li>
+                    <li><a href="#start">📋 시작하기</a>
+                        <ul>
+                            <li><a href="pages/roadmap-guide.html">로드맵 가이드</a></li>
+                            <li><a href="pages/readiness-checklist.html">사업 준비도 체크리스트</a></li>
+                            <li><a href="pages/structure-diagram.html">지식창고 구조도</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#preparation">🏃‍♂️ 프로젝트 준비운동</a>
+                        <ul>
+                            <li><a href="pages/01-problem-definition.html">문제 정의</a></li>
+                            <li><a href="pages/01-lean-startup.html">린 스타트업</a></li>
+                            <li><a href="pages/01-customer-development.html">고객 개발</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#strategy">🎯 전략 설계</a>
+                        <ul>
+                            <li><a href="pages/02-business-model.html">비즈니스 모델 캔버스</a></li>
+                            <li><a href="pages/02-mvp.html">최소 기능 제품 (MVP)</a></li>
+                            <li><a href="pages/02-lean-canvas.html">린 캔버스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#execution">⚡ 실행과 관리</a>
+                        <ul>
+                            <li><a href="pages/03-agile.html">애자일 방법론</a></li>
+                            <li><a href="pages/03-growth-measurement.html">성장 측정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#communication">🗣️ 커뮤니케이션과 도구</a>
+                        <ul>
+                            <li><a href="pages/04-pitching.html">피칭과 발표</a></li>
+                            <li><a href="pages/04-collaboration-tools.html">필수 협업툴</a></li>
+                            <li><a href="pages/04-sales.html">영업과 설득</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#team">👥 팀과 창업가</a>
+                        <ul>
+                            <li><a href="pages/05-founder-dna.html">창업가의 DNA</a></li>
+                            <li><a href="pages/05-founder-principles.html">창업가의 행동원칙</a></li>
+                            <li><a href="pages/05-team-culture.html">창업가의 유산: 팀과 문화</a></li>
+                            <li><a href="pages/05-team-philosophy.html">쿵덕이 우리의 정신과 철학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#resources">📚 추천 자료모음</a>
+                        <ul>
+                            <li><a href="pages/06-recommended-resources.html">추천 자료 모음</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>

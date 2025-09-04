@@ -12,15 +12,95 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 모바일 메뉴 토글 (필요시 사용)
+    // 모바일 메뉴 토글 기능
     const menuToggle = document.querySelector('.menu-toggle');
     const sidebar = document.querySelector('.sidebar');
+    const content = document.querySelector('.content');
+    const mobileOverlay = document.querySelector('.mobile-overlay');
     
-    if (menuToggle && sidebar) {
-        menuToggle.addEventListener('click', function() {
-            sidebar.classList.toggle('open');
+    function openSidebar() {
+        sidebar.classList.add('open');
+        menuToggle.classList.add('active');
+        mobileOverlay.classList.add('active');
+        content.classList.add('sidebar-open');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        menuToggle.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        content.classList.remove('sidebar-open');
+        document.body.style.overflow = '';
+    }
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (sidebar.classList.contains('open')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
         });
     }
+    
+    // 오버레이 클릭시 사이드바 닫기
+    if (mobileOverlay) {
+        mobileOverlay.addEventListener('click', closeSidebar);
+    }
+    
+    // 사이드바 외부 클릭시 닫기
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768 && 
+            sidebar.classList.contains('open') && 
+            !sidebar.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            closeSidebar();
+        }
+    });
+    
+    // 터치 스와이프 기능 (모바일)
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    function handleSwipe() {
+        const swipeDistance = touchEndX - touchStartX;
+        const minSwipeDistance = 50;
+        
+        if (Math.abs(swipeDistance) > minSwipeDistance) {
+            if (swipeDistance > 0 && touchStartX < 50) {
+                // 오른쪽 스와이프 (사이드바 열기)
+                openSidebar();
+            } else if (swipeDistance < 0 && sidebar.classList.contains('open')) {
+                // 왼쪽 스와이프 (사이드바 닫기)
+                closeSidebar();
+            }
+        }
+    }
+    
+    document.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    document.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    // ESC 키로 사이드바 닫기
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+            closeSidebar();
+        }
+    });
+    
+    // 화면 크기 변경시 사이드바 상태 초기화
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            closeSidebar();
+        }
+    });
 
     // Mermaid 다이어그램 초기화
     if (typeof mermaid !== 'undefined') {
@@ -67,15 +147,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 페이지 로드 애니메이션
-    const content = document.querySelector('.content');
-    if (content) {
-        content.style.opacity = '0';
-        content.style.transform = 'translateY(20px)';
+    const contentElement = document.querySelector('.content');
+    if (contentElement) {
+        contentElement.style.opacity = '0';
+        contentElement.style.transform = 'translateY(20px)';
         
         setTimeout(() => {
-            content.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            content.style.opacity = '1';
-            content.style.transform = 'translateY(0)';
+            contentElement.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            contentElement.style.opacity = '1';
+            contentElement.style.transform = 'translateY(0)';
         }, 100);
     }
 });
